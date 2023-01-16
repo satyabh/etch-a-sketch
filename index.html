@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <h1>Etch a Sketch</h1>
-    <div class="container">
-        <div class=""></div>
+    <div id="container">
+        <h1>Etch a Sketch</h1>
+        <div id="canvas"></div>
+        <div class="change"><p><span id="a">16</span> x <span id="b">16</span></p>
+            <input type="range" min="8" max="32" value="16" class="myslider" id="rangeSlider" onchange="update(this.value)"></div>
     </div>
 </body>
 </html>
